@@ -5,12 +5,14 @@ public class Grandeur {
 	public String color;
 	public String gear;
 	public int price;
-
-	public Grandeur(String c, String g, int p) {
+	public String girl;
+	
+	public Grandeur(String c, String g, int p, String gi) {
 		System.out.println("Grandeur constructor");
 		color =c;
 		gear = g;
 		price = p;
+		girl = gi;
 	}
 
 	public void run() {
@@ -26,6 +28,9 @@ public class Grandeur {
 		System.out.println("color : " + color);
 		System.out.println("gear : " + gear);
 		System.out.println("price : " + price);
+		System.out.println("girl : " + girl);
 	}
+	 
+	
 }
 
