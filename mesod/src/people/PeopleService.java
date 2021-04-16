@@ -13,4 +13,9 @@ public class PeopleService {
 	list1.get(1).setName("ps에서 변경");
 	System.out.println(list1.get(1));
 	}
+	
+	void peoplePrint(People p) {
+		System.out.println("peopleprint 호출");
+		System.out.println(p);
+	}
 }

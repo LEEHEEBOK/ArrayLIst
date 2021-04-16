@@ -50,6 +50,9 @@ public class PeopleMain {
 			
 		}
 		
+		ps.peoplePrint(peo2);
+		
+		
 		
 		
 		
