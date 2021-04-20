@@ -37,7 +37,7 @@ public class BoardService {
 				String Writer = scan.next();
 				BoardList.get(i).setTitle(Title);
 				BoardList.get(i).setTitle(Writer);
-			} else {
+			} else if(i>=BoardList.size()) {
 				System.out.println("아이디 또는 비밀번호가 맞지 않습니다.");
 			}
 		}
