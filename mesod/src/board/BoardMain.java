@@ -36,7 +36,7 @@ public class BoardMain {
 			case 2:
 //			for(int i=0; i < BoardList.size(); i++) {
 //				System.out.println(BoardList.get(i));
-//			}
+//			} 
 				bs.BoardList(BoardList);
 				break;
 			case 3:

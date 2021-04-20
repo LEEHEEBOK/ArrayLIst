@@ -18,10 +18,10 @@ public class BoardService {
 		for (int i = 0; i < BoardList.size(); i++) {
 			if (Number == BoardList.get(i).getNumber()) {
 				System.out.println(BoardList.get(i));
-			} else {
+			} else if(i>=BoardList.size()){
 				System.out.println("번호를 다시 입력해주세요.");
 			}
-		}
+		} 
 	}
 
 	List<BoardDTO> rewind(List<BoardDTO> BoardList) {
@@ -41,8 +41,10 @@ public class BoardService {
 				System.out.println("아이디 또는 비밀번호가 맞지 않습니다.");
 			}
 		}
+		
 		return BoardList;
 	}
+
 	void remove(List<BoardDTO> BoardList) {
 		System.out.print("글번호>");
 		int Number = scan.nextInt();
@@ -50,10 +52,10 @@ public class BoardService {
 		String Password = scan.next();
 
 		for (int i = 0; i < BoardList.size(); i++) {
-						if (Number == BoardList.get(i).getNumber() && Password.equals(BoardList.get(i).getPassword())) {
+			if (Number == BoardList.get(i).getNumber() && Password.equals(BoardList.get(i).getPassword())) {
 				BoardList.remove(i);
 			}
 		}
 	}
-	
+
 }
